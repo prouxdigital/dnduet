@@ -10,7 +10,7 @@
     <!-- Bulma Version 0.7.4-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.css" />
     <link rel="stylesheet" href="css/main.css">
-    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 </head>
 
 <body>
@@ -29,31 +29,49 @@
         <div id="navbarExampleTransparentExample" class="navbar-menu">
             <div class="navbar-start">
                 <a class="navbar-item" href="#">
-                    Home
+                    <span class="icon">
+                        <i class="fas fa-microphone"></i>
+                    </span>
+                    <span> Episodes</span>
                 </a>
                 <a class="navbar-item" href="#">
-                    Episodes
+                    <span class="icon">
+                        <i class="fas fa-dice-d20"></i>
+                    </span>
+                    <span> Game</span>
                 </a>
                 <a class="navbar-item" href="#">
-                    Game
-                </a>
-                <a class="navbar-item" href="#">
-                    Blog
+                    <span class="icon">
+                        <i class="fas fa-scroll"></i>
+                    </span>
+                    <span> Blog</span>
                 </a>
             </div>
 
             <div class="navbar-end">
                 <a href="" class="navbar-item has-text-info">
-                    <i class="fab fa-spotify fa-2x"></i>
-                    <span class="is-hidden-tablet">&nbsp;Follow us on Spotify</span>
+                    <div class="level is-mobile">
+                        <div class="level-left">
+                            <i class="fab fa-spotify fa-2x"></i>
+                            <span class="is-hidden-desktop">&nbsp;&nbsp;Follow us on Spotify</span>
+                        </div>
+                    </div>
                 </a>
                 <a href="" class="navbar-item has-text-info">
-                    <i class="fab fa-instagram fa-2x"></i>
-                    <span class="is-hidden-tablet">&nbsp;Follow us on Instagram</span>
+                    <div class="level is-mobile">
+                        <div class="level-left">
+                            <i class="fab fa-instagram fa-2x"></i>
+                            <span class="is-hidden-desktop">&nbsp;&nbsp;Follow us on Instagram</span>
+                        </div>
+                    </div>
                 </a>
                 <a href="" class="navbar-item has-text-info">
-                    <i class="fab fa-twitter-square fa-2x"></i>
-                    <span class="is-hidden-tablet">&nbsp;Follow us on Twitter</span>
+                    <div class="level is-mobile">
+                        <div class="level-left">
+                            <i class="fab fa-twitter-square fa-2x"></i>
+                            <span class="is-hidden-desktop">&nbsp;&nbsp;Follow us on Twitter</span>
+                        </div>
+                    </div>
                 </a>
                 <div class="navbar-item">
                     <div class="field">
@@ -151,13 +169,6 @@
 
     <section class="section">
         <div class="container has-text-centered narrow-content">
-            <h2 class="title">Updates</h2>
-
-        </div>
-    </section>
-
-    <section class="section">
-        <div class="container has-text-centered narrow-content">
             <h2 class="title">Cast</h2>
             
             <div class="columns is-mobile is-multiline">
@@ -217,13 +228,13 @@
         <div class="container">
             <div class="content has-text-centered">
                 <p>
-                    <a href="">
+                    <a href="" class="has-text-info">
                         <i class="fab fa-spotify fa-2x"></i>
                     </a>
-                    <a href="">
+                    <a href="" class="has-text-info">
                         <i class="fab fa-instagram fa-2x"></i>
                     </a>
-                    <a href="">
+                    <a href="" class="has-text-info">
                         <i class="fab fa-twitter-square fa-2x"></i>
                     </a>
                 </p>
