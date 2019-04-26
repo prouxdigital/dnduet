@@ -2,3 +2,13 @@
     margin: 0 auto;
     max-width: 768px;
 }
+.holder {
+    position: relative;
+}
+#most-recent {
+    position: absolute;
+    bottom: 0; right: 0;
+    padding: 1rem;
+    background: rgba(0,0,0,0.5);
+    width: 100%;
+}
