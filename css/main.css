@@ -5,10 +5,18 @@
 .holder {
     position: relative;
 }
-#most-recent {
+#hero-eps {
     position: absolute;
     bottom: 0; right: 0;
     padding: 1rem;
     background: rgba(0,0,0,0.5);
     width: 100%;
+}
+#hero-img {
+    min-height: 240px;
+}
+#brenna-img, #zach-img {
+    margin: 0 auto;
+    max-height: 360px;
+    max-width: 360px;
 }

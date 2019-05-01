@@ -76,7 +76,7 @@
                 <div class="navbar-item">
                     <div class="field">
                         <p class="control">
-                            <a class="bd-tw-button button is-info" data-social-network="Twitter" data-social-action="tweet" data-social-target="#" target="_blank" href="https://twitter.com/intent/tweet?text=get free bulma templates:;url=https://github.com/dansup/bulma-templates">
+                            <a class="bd-tw-button button is-info" data-social-network="Twitter" data-social-action="tweet" data-social-target="#" target="_blank" href="https://twitter.com/intent/tweet?text=listen to the latest episode of dnduetcast:;url=https://www.dnduetcast.com">
                                 <span class="icon">
                                     <i class="fab fa-twitter"></i>
                                 </span>
@@ -93,18 +93,18 @@
 
     <section class="hero holder">
         <figure class="image">
-            <img src="https://i.pinimg.com/originals/fa/a6/fe/faa6feb6937634d7a8e9abb203dab78e.jpg">
+            <img src="assets/heroimg_placeholder" id="hero-img">
         </figure>
-        <div id="most-recent">
+        <div id="hero-eps">
             <div class="level">
-                <div class="level-left">
-                    <a href="#" class="has-text-white">
+                <div class="level-left is-hidden-mobile">
+                    <a href="#" class="has-text-white" id="first-episode">
                         First Episode: <span>S1E1 - Hello from Lindorwin</span>
                     </a>
                 </div>
                 <div class="level-right has-text-right">
-                    <a href="#" class="has-text-white">
-                        Most Recent Episode: <span>S1E1 - Hello from Lindorwin</span>
+                    <a href="#" class="has-text-white" id="latest-episode">
+                        Latest Episode: <span>S1E1 - Hello from Lindorwin</span>
                     </a>
                 </div>
             </div>
@@ -115,37 +115,15 @@
         <div class="container has-text-centered narrow-content">
             <div class="content">
                 <h1>About</h1>
-                <p><b>dnduet</b> is an actual-play duet RPG podcast created by Zach and Brenna, a married non-binary couple with a love of storytelling and tabletop roleplaying games.</p>
+                <p><b>dnduet</b> is an actual-play RPG duet podcast created by Zach and Brenna, a married non-binary couple with a love of storytelling and tabletop roleplaying games.</p>
             </div>
 
-            <div class="columns is-mobile is-centered">
+            <div class="columns is-centered">
                 <div class="column">
                     <div class="card">
                         <div class="card-image">
-                            <figure class="image is-square">
-                                <img src="https://images-na.ssl-images-amazon.com/images/I/61gClWrSdvL._SX425_.jpg" alt="Placeholder image">
-                            </figure>
-                        </div>
-                        <div class="card-content">
-                            <div class="media">
-                                <div class="media-content">
-                                    <p class="title is-4">Zach</p>
-                                    <p class="subtitle is-6">The Game Master</p>
-                                </div>
-                            </div>
-
-                            <div class="content">
-                                <p>Lorem enim temporibus minima saepe nisi incidunt? Provident eveniet autem praesentium natus voluptatibus totam? Porro vitae incidunt accusamus maxime.</p>
-                                <a>@lichkitsch</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="column">
-                    <div class="card">
-                        <div class="card-image">
-                            <figure class="image is-square">
-                                <img src="https://images-na.ssl-images-amazon.com/images/I/71Lu4Xjvy0L._SX425_.jpg" alt="Placeholder image">
+                            <figure class="image">
+                                <img src="https://images-na.ssl-images-amazon.com/images/I/71Lu4Xjvy0L._SX425_.jpg" alt="Placeholder image" id="brenna-img">
                             </figure>
                         </div>
                         <div class="card-content">
@@ -157,8 +135,30 @@
                             </div>
 
                             <div class="content">
-                                <p>Lorem enim temporibus minima saepe nisi incidunt? Provident eveniet autem praesentium natus voluptatibus totam? Porro vitae incidunt accusamus maxime.</p>
+                                <p class="is-hidden-mobile">Lorem enim temporibus minima saepe nisi incidunt? Provident eveniet autem praesentium natus voluptatibus totam? Porro vitae incidunt accusamus maxime.</p>
                                 <a>@plush_bunny</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image">
+                                <img src="https://images-na.ssl-images-amazon.com/images/I/61gClWrSdvL._SX425_.jpg" alt="Placeholder image" id="zach-img">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <div class="media">
+                                <div class="media-content">
+                                    <p class="title is-4">Zach</p>
+                                    <p class="subtitle is-6">The Game Master</p>
+                                </div>
+                            </div>
+
+                            <div class="content">
+                                <p class="is-hidden-mobile">Lorem enim temporibus minima saepe nisi incidunt? Provident eveniet autem praesentium natus voluptatibus totam? Porro vitae incidunt accusamus maxime.</p>
+                                <a>@lichkitsch</a>
                             </div>
                         </div>
                     </div>
@@ -172,7 +172,7 @@
             <h2 class="title">Cast</h2>
             
             <div class="columns is-mobile is-multiline">
-                <div class="column is-one-third">
+                <div class="column is-6-mobile is-4-tablet">
                     <a href="#">
                         <figure class="image is-square">
                             <img class="is-rounded" src="https://placekitten.com/255/255" alt="Placeholder image">
@@ -180,7 +180,7 @@
                         Ifir Spellsong
                     </a>
                 </div>
-                <div class="column is-one-third">
+                <div class="column is-6-mobile is-4-tablet">
                     <a href="#">
                         <figure class="image is-square">
                             <img class="is-rounded" src="https://placekitten.com/302/302" alt="Placeholder image">
@@ -188,7 +188,7 @@
                         Dama
                     </a>
                 </div>
-                <div class="column is-one-third">
+                <div class="column is-6-mobile is-4-tablet">
                     <a href="#">
                         <figure class="image is-square">
                             <img class="is-rounded" src="https://placekitten.com/303/303" alt="Placeholder image">
@@ -196,7 +196,7 @@
                         Lili
                     </a>
                 </div>
-                <div class="column is-one-third">
+                <div class="column is-6-mobile is-4-tablet">
                     <a href="#">
                         <figure class="image is-square">
                             <img class="is-rounded" src="https://placekitten.com/306/306" alt="Placeholder image">
@@ -204,7 +204,7 @@
                         Ezrah
                     </a>
                 </div>
-                <div class="column is-one-third">
+                <div class="column is-6-mobile is-4-tablet">
                     <a href="#">
                         <figure class="image is-square">
                             <img class="is-rounded" src="https://placekitten.com/403/403" alt="Placeholder image">
@@ -212,7 +212,7 @@
                         Salgrim
                     </a>
                 </div>
-                <div class="column is-one-third">
+                <div class="column is-6-mobile is-4-tablet">
                     <a href="#">
                         <figure class="image is-square">
                             <img class="is-rounded" src="https://placekitten.com/304/304" alt="Placeholder image">
@@ -228,13 +228,13 @@
         <div class="container">
             <div class="content has-text-centered">
                 <p>
-                    <a href="" class="has-text-info">
+                    <a href="#" class="has-text-info">
                         <i class="fab fa-spotify fa-2x"></i>
                     </a>
-                    <a href="" class="has-text-info">
+                    <a href="#" class="has-text-info">
                         <i class="fab fa-instagram fa-2x"></i>
                     </a>
-                    <a href="" class="has-text-info">
+                    <a href="#" class="has-text-info">
                         <i class="fab fa-twitter-square fa-2x"></i>
                     </a>
                 </p>
@@ -249,7 +249,8 @@
             </div>
         </div>
     </footer>
-        <script src="js/bulma.js"></script>
+
+    <script src="js/bulma.js"></script>
 </body>
 
 </html>
