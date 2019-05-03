@@ -1,28 +1,23 @@
+;(function() {
+    const toggleTab = el => {
+        if(el.classList.contains("is-active")) return;
 
-document.querySelectorAll("#nav li").forEach(function(navEl) {
-  navEl.onclick = function() { toggleTab(this.id, this.dataset.target); }
-});
+        [].forEach.call(document.querySelectorAll(".panel-tabs a"), el => {
+            el.classList.remove("is-active");
+        });
 
-function toggleTab(selectedNav, targetId) {
-  var navEls = document.querySelectorAll("#nav li");
+        [].forEach.call(document.querySelectorAll(".panel-tab"), el => {
+            el.classList.add("is-hidden");
+        });
 
-  navEls.forEach(function(navEl) {
-    if (navEl.id == selectedNav) {
-      navEl.classList.add("is-active");
-    } else {
-      if (navEl.classList.contains("is-active")) {
-        navEl.classList.remove("is-active");
-      }
-    }
-  });
+        el.classList.add("is-active");
+        document.getElementById(el.dataset.target).classList.remove("is-hidden");
+    };
 
-  var tabs = document.querySelectorAll(".tab-pane");
-
-  tabs.forEach(function(tab) {
-    if (tab.id == targetId) {
-      tab.style.display = "block";
-    } else {
-      tab.style.display = "none";
-    }
-  });
-}
+    [].forEach.call(document.querySelectorAll(".panel-tabs a"), el => {
+        el.addEventListener("click", e => {
+            toggleTab(el);
+            e.stopPropagation();
+        });
+    });
+})();

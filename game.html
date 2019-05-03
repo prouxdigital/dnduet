@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>dnduet</title>
+    <link rel="shortcut icon" href="../images/fav_icon.png" type="image/x-icon">
+    <!-- Bulma Version 0.7.4-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.css" />
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav class="navbar is-white">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="/index.html">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Love_Heart_SVG.svg/847px-Love_Heart_SVG.svg.png" alt="Bulma: a modern CSS framework based on Flexbox" width="28" height="28">
+            </a>
+            <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+
+        <div id="navbarExampleTransparentExample" class="navbar-menu">
+            <div class="navbar-start">
+                <a class="navbar-item" href="#">
+                    <span class="icon">
+                        <i class="fas fa-microphone"></i>
+                    </span>
+                    <span> Episodes</span>
+                </a>
+                <a class="navbar-item is-active" href="#">
+                    <span class="icon">
+                        <i class="fas fa-dice-d20"></i>
+                    </span>
+                    <span> Game</span>
+                </a>
+                <a class="navbar-item" href="#">
+                    <span class="icon">
+                        <i class="fas fa-scroll"></i>
+                    </span>
+                    <span> Blog</span>
+                </a>
+            </div>
+
+            <div class="navbar-end">
+                <a href="" class="navbar-item has-text-info">
+                    <div class="level is-mobile">
+                        <div class="level-left">
+                            <i class="fab fa-spotify fa-2x"></i>
+                            <span class="is-hidden-desktop">&nbsp;&nbsp;Follow us on Spotify</span>
+                        </div>
+                    </div>
+                </a>
+                <a href="" class="navbar-item has-text-info">
+                    <div class="level is-mobile">
+                        <div class="level-left">
+                            <i class="fab fa-youtube fa-2x"></i>
+                            <span class="is-hidden-desktop">&nbsp;&nbsp;Subscribe to us on Youtube</span>
+                        </div>
+                    </div>
+                </a>
+                <a href="" class="navbar-item has-text-info">
+                    <div class="level is-mobile">
+                        <div class="level-left">
+                            <i class="fab fa-instagram fa-2x"></i>
+                            <span class="is-hidden-desktop">&nbsp;&nbsp;Follow us on Instagram</span>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://www.twitter.com/dnduet_cast" target="_blank" class="navbar-item has-text-info">
+                    <div class="level is-mobile">
+                        <div class="level-left">
+                            <i class="fab fa-twitter-square fa-2x"></i>
+                            <span class="is-hidden-desktop">&nbsp;&nbsp;Follow us on Twitter</span>
+                        </div>
+                    </div>
+                </a>
+                <div class="navbar-item">
+                    <div class="field">
+                        <p class="control">
+                            <a class="bd-tw-button button is-info" data-social-network="Twitter" data-social-action="tweet" data-social-target="#" target="_blank" href="https://twitter.com/intent/tweet?text=listen to the latest episode of dnduetcast:;url=https://www.dnduetcast.com">
+                                <span class="icon">
+                                    <i class="fab fa-twitter"></i>
+                                </span>
+                                <span>
+                                    #dnduetcast
+                                </span>
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-8-tablet">
+                    <h1 class="title">dnduet</h1>
+                    <h2 class="subtitle">The Game</h2>
+                    <p><i>dnduet</i> is a custom-built tabletop roleplaying system and the digital tools available below have been built with that system in mind. While the system needs little more than dice and something to write with, the tools are meant to help with creating characters, adventures, traps, puzzles, maps, items, perks, quirks, and more.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="player" class="section">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-narrow">
+                    <nav class="panel">
+                        <p class="panel-heading">
+                            Player Tools
+                        </p>
+                        <p class="panel-tabs">
+                            <a class="is-active" data-target="characters">Characters</a>
+                            <a data-target="dice-roller">Dice Roller</a>
+                        </p>
+                        <div class="panel-tab is-active" id="characters">
+                            <a class="panel-block is-active">
+                                <span class="panel-icon">
+                                    <i class="fas fa-user" aria-hidden="true"></i>
+                                </span>
+                                New character
+                            </a>
+                            <a class="panel-block">
+                                <span class="panel-icon">
+                                    <i class="fas fa-user" aria-hidden="true"></i>
+                                </span>
+                                Ifir Spellsong
+                            </a>
+                        </div>
+                        <div class="panel-tab is-hidden" id="dice-roller">
+                            <div class="panel-block">
+                                <p id="diceResult" class="is-size-3 has-text-centered is-fullwidth">-</p>
+                            </div>
+                            <div class="panel-block">
+                                <div class="field has-addons">
+                                    <div class="control">
+                                        <span class="select">
+                                            <select id="diceAmt" name="diceAmount">
+                                                <option value="10">10</option>
+                                                <option value="9">9</option>
+                                                <option value="8">8</option>
+                                                <option value="7">7</option>
+                                                <option value="6">6</option>
+                                                <option value="5">5</option>
+                                                <option value="4">4</option>
+                                                <option value="3">3</option>
+                                                <option value="2">2</option>
+                                                <option value="1" selected="true">1</option>
+                                            </select>
+                                        </span>
+                                    </div>
+                                    <div class="control">
+                                        <span class="select">
+                                            <select id="diceSides" name="diceSides">
+                                                <option value="20" selected="true">d20</option>
+                                                <option value="12">d12</option>
+                                                <option value="10">d10</option>
+                                                <option value="8">d8</option>
+                                                <option value="6">d6</option>
+                                                <option value="4">d4</option>
+                                            </select>
+                                        </span>
+                                    </div>
+                                    <div class="control">
+                                        <span class="select">
+                                            <select id="diceMod" name="diceMod">
+                                                <option value="8">+8</option>
+                                                <option value="7">+7</option>
+                                                <option value="6">+6</option>
+                                                <option value="5">+5</option>
+                                                <option value="4">+4</option>
+                                                <option value="3">+3</option>
+                                                <option value="2">+2</option>
+                                                <option value="1">+1</option>
+                                                <option value="0" selected="true">0</option>
+                                                <option value="-1">-1</option>
+                                                <option value="-2">-2</option>
+                                                <option value="-3">-3</option>
+                                                <option value="-4">-4</option>
+                                                <option value="-5">-5</option>
+                                                <option value="-6">-6</option>
+                                                <option value="-7">-7</option>
+                                                <option value="-8">-8</option>
+                                            </select>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel-block">
+                                <button id="rollDice" class="button is-fullwidth">
+                                    <span class="icon"><i class="fas fa-dice-d20"></i></span>
+                                    &nbsp;Roll
+                                </button>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+                <div class="column">
+                    <div class="content is-fullwidth">
+                        <h2 id="char-name">Ifir Spellsong</h2>
+                        <div class="columns is-multiline">
+                            <div class="column is-6-tablet is-4-widescreen">
+                                <div class="field is-horizontal is-marginless">
+                                    <div class="field-label">
+                                        <label class="label" for="">HP</label>
+                                    </div>
+                                    <div class="field-body">
+                                        <div class="field has-addons">
+                                            <p class="control is-expanded">
+                                                <input id="char-hp" type="number" name="" class="input has-text-right" value="10" min="-10" max="10">
+                                            </p>
+                                            <p class="control">
+                                                <a id="char-maxhp" class="button is-static">
+                                                    10
+                                                </a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <table class="table">
+                                    <tbody>
+                                        <tr>
+                                            <th class="has-text-centered">STR</th>
+                                            <td>+0</td>
+                                            <th class="has-text-right">AC</th>
+                                            <td>10</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="has-text-centered">DEX</th>
+                                            <td>+0</td>
+                                            <th class="has-text-right"></th>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <th class="has-text-centered">CON</th>
+                                            <td>+0</td>
+                                            <th class="has-text-right">Unaided</th>
+                                            <td>+0</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="has-text-centered">INT</th>
+                                            <td>+0</td>
+                                            <th class="has-text-right">Tools</th>
+                                            <td>+0</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="has-text-centered">WIS</th>
+                                            <td>+0</td>
+                                            <th class="has-text-right">Magic</th>
+                                            <td>+0</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="has-text-centered">CHA</th>
+                                            <td>+0</td>
+                                            <th class="has-text-right">Critical</th>
+                                            <td>+0</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="column is-6-tablet is-4-widescreen">
+                                <div id="items" class="box is-paddingless">
+                                    <table class="table is-fullwidth">
+                                        <tbody>
+                                            <tr>
+                                                <td>Thieves' Tools</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Thieves' Tools</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Thieves' Tools</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Thieves' Tools</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Thieves' Tools</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>     
+                                </div>
+                            </div>
+                            <div class="column is-12-tablet is-4-widescreen">
+                                <div class="content">
+                                    <h3>Perks</h3>
+                                    <ul>
+                                        <li>Child of Light
+                                            <ul>
+                                                <li>Ankle wings that allow for flight</li>
+                                                <li>Advantage on perception rolls</li>
+                                            </ul>
+                                        </li>
+                                        <li>Class Perks
+                                            <ul>
+                                                <li>Roll critical on all sneak attacks</li>
+                                                <li>Advantage on trapfinding</li>
+                                            </ul>
+                                        </li>
+                                        <li>Animal Companion
+                                            <ul>
+                                                <li>Lala the Lindworm (provides paralyzing venom)</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    </hr>
+                                    <h3>Quirks</h3>
+                                    <ul>
+                                        <li>Daddy Issues
+                                            <ul>
+                                                <li>Pursued by powerful, abusive father</li>
+                                                <li>Paralyzing fear and paranoia of father</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="content has-text-centered">
+                <p>
+                    <a href="#" class="has-text-info">
+                        <i class="fab fa-spotify fa-2x"></i>
+                    </a>
+                    <a href="#" class="has-text-info">
+                        <i class="fab fa-youtube fa-2x"></i>
+                    </a>
+                    <a href="#" class="has-text-info">
+                        <i class="fab fa-instagram fa-2x"></i>
+                    </a>
+                    <a href="#" class="has-text-info">
+                        <i class="fab fa-twitter-square fa-2x"></i>
+                    </a>
+                </p>
+                <p>
+                    Copyright © 2019 Zach Allen<br/>
+                    <small>
+                        The source code is licensed
+                        <a href="https://choosealicense.com/licenses/gpl-3.0/">GNU GPLv3</a>. The website content
+                        is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
+                    </small>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/bulma.js"></script>
+    <script src="js/dice.js"></script>
+    <script src="js/tabs.js"></script>
+</body>
+
+</html>

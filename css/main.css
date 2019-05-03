@@ -36,3 +36,18 @@
 #twitter-feed {
     overflow-y: scroll;
 }
+#player, #game-master {
+    padding-top:0;
+}
+.is-fullwidth {
+    width: 100% !important;
+}
+#items > table {
+    border-radius: 6px;
+}
+.panel-tabs {
+    min-width: 250px;
+}
+.panel-tab > .panel-block:first-child {
+    border-top: 0;
+}
