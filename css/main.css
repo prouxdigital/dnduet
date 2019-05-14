@@ -1,6 +1,10 @@
 .navbar-brand > .navbar-item {
     color: #ff5987 !important;
 }
+.navbar-dropdown a.navbar-item.is-active {
+    background-color: whitesmoke !important;
+    color: #3273dc !important;
+}
 .narrow-content {
     margin: 0 auto;
     max-width: 768px;
