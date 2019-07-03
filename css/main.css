@@ -58,3 +58,19 @@
 .panel-tab > .panel-block:first-child {
     border-top: 0;
 }
+.podcast_name {
+    display: none;
+}
+
+.episode {
+    margin: 32px auto;
+    padding-bottom: 32px;
+    border-bottom: 2px solid black;
+}
+.episode:last-of-type {
+    border: none;
+}
+
+iframe {
+    height: 70px;
+}
