@@ -24,7 +24,7 @@
 }
 .is-profile-pic {
     margin: 0 auto;
-    height: 240px;
+    height: auto;
     width: 240px;
 }
 #youtube-embed {
